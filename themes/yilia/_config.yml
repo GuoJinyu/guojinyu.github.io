@@ -8,7 +8,7 @@ menu:
 subnav:
   github: "https://github.com/GuoJinyu"
   weibo: "http://weibo.com/rescueq"
-  rss: "#"
+  rss: "http://guojinyu.github.io/atom.xml"
   zhihu: "https://www.zhihu.com/people/ackerkwok"
   #douban: "#"
   #mail: "#"
