@@ -1,2 +1,2 @@
 # guojinyu.github.io
-My Technical Blog: 
+My Technical Blog: http://guojinyu.github.io
