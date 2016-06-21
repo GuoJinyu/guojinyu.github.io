@@ -71,3 +71,6 @@ deploy:
   type: git
   repo: git@github.com:GuoJinyu/guojinyu.github.io.git
   branch: master
+
+douban:
+  user: rescueacker

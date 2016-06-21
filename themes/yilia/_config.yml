@@ -1,14 +1,15 @@
 # Header
 menu:
   主页: /
-  所有文章: /archives
+  博文: /archives
+  读书: /douban
   # 随笔: /tags/随笔
 
 # SubNav
 subnav:
   github: "https://github.com/GuoJinyu"
   weibo: "http://weibo.com/rescueq"
-  rss: "http://guojinyu.github.io/atom.xml"
+  rss: /atom.xml
   zhihu: "https://www.zhihu.com/people/ackerkwok"
   #douban: "#"
   #mail: "#"
