@@ -32,7 +32,7 @@ animate: true
 open_in_new: false
 
 # Miscellaneous
-google_analytics: ''
+google_analytics: 'UA-61761428-1'
 favicon: /assets/images/favicon.png
 
 #你的头像url
@@ -51,7 +51,7 @@ tagcloud: true
 #friends: false
 #开启——
 friends:
-  #奥巴马的博客: http://localhost:4000/
+  Yikun: http://yikun.github.io/
 
 #是否开启“关于我”。
 #不开启——
