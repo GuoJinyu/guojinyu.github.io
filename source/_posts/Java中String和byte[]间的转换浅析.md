@@ -1,4 +1,4 @@
-﻿title: Java中String和byte[]间的转换浅析
+title: Java中String和byte[]间的转换浅析
 categories: 技术
 tags: [Java,Android]
 ---
@@ -236,5 +236,4 @@ public static byte[] hexStrToByteArray(String str)
     return byteArray;
 }
 ```
-最后，本人涉世未深，才疏学浅，文中若有什么错误希望大家探讨指正！
-另，转载请注明出处！
+另，转载请注明出处！文中若有什么错误希望大家探讨指正！
