@@ -528,6 +528,8 @@ amountEdit.setText("123456789");
 
 综上，可以看出通过Builder模式自定义Dialog既可以维持原有Android对话框的使用方法，同时使用方便，自由度更高，大家完全可以按照各自的需求来对代码作出相应的修改。需要说明的是本文并没有严格按照传统的Builder设计模式来实现对话框，而是做了一些简化以更适合于我们的场景。
 
+文中所有代码可以在[个人github主页](https://github.com/GuoJinyu/AndroidUtils/tree/master/dialog)查看和下载。
+
 另，转载请注明出处！文中若有什么错误希望大家探讨指正！
 
   [1]: http://obc3atr48.bkt.clouddn.com/245941188562351983.png

@@ -81,4 +81,6 @@ if (netI.getDisplayName().equals("wlan0") || netI.getDisplayName().equals("eth0"
 > * The address 255.255.255.255 is the broadcast address.
 > * Anything else should be a valid public point-to-point IPv4 address.
 
+文中所有代码可以在[个人github主页](https://github.com/GuoJinyu/AndroidUtils/tree/master)查看和下载。
+
 另，转载请注明出处！文中若有什么错误希望大家探讨指正！

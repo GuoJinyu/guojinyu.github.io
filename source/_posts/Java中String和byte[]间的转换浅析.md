@@ -11,7 +11,7 @@ public static byte[] strToByteArray(String str) {
         return null;
     }
     byte[] byteArray = str.getBytes();
-    return string;
+    return byteArray;
 }
 ```
 很简单，就是调用String类的getBytes()方法。看JDK源码可以发现该方法最终调用了String类如下的方法。
@@ -236,4 +236,7 @@ public static byte[] hexStrToByteArray(String str)
     return byteArray;
 }
 ```
+
+文中所有代码可以在[个人github主页](https://github.com/GuoJinyu/AndroidUtils/tree/master)查看和下载。
+
 另，转载请注明出处！文中若有什么错误希望大家探讨指正！
