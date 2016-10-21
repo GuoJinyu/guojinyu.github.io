@@ -1,16 +1,15 @@
 # Header
+
 menu:
   主页: /
-  博文: /archives
-  读书: /douban
-  # 随笔: /tags/随笔
+  随笔: /tags/随笔
 
 # SubNav
 subnav:
-  github: "https://github.com/GuoJinyu"
-  weibo: "http://weibo.com/rescueq"
-  rss: /atom.xml
-  zhihu: "https://www.zhihu.com/people/ackerkwok"
+  github: "#"
+  weibo: "#"
+  rss: "#"
+  zhihu: "#"
   #douban: "#"
   #mail: "#"
   #facebook: "#"
@@ -20,10 +19,15 @@ subnav:
 
 rss: /atom.xml
 
+# 是否需要修改 root 路径
+# 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，
+# 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。
+root: 
+
 # Content
 excerpt_link: more
 fancybox: true
-mathjax: true
+mathjax: false
 
 # 是否开启动画效果
 animate: true
@@ -32,29 +36,37 @@ animate: true
 open_in_new: false
 
 # Miscellaneous
-google_analytics: 'UA-61761428-1'
-favicon: /assets/images/favicon.png
+google_analytics: ''
+favicon: /favicon.png
 
 #你的头像url
-avatar: /assets/images/avatar.png
+avatar:
+
 #是否开启分享
 share_jia: true
 share_addthis: false
+
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
 #若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: "acker"
-#是否开启云标签
-tagcloud: true
+duoshuo: false
 
-#是否开启友情链接
-#不开启——
-#friends: false
-#开启——
+# 如不需要，将该项置为false
+# 比如
+#smart_menu:
+#  friends: false
+
+smart_menu:
+  innerArchive: '所有文章'
+  tagcloud: '标签'
+  friends: '友链'
+  aboutme: '关于我'
+
 friends:
-  Yikun: http://yikun.github.io/
+  友情链接1: http://localhost:4000/
+  友情链接2: http://localhost:4000/
+  友情链接3: http://localhost:4000/
+  友情链接4: http://localhost:4000/
+  友情链接5: http://localhost:4000/
+  友情链接6: http://localhost:4000/
 
-#是否开启“关于我”。
-#不开启——
-#aboutme: false
-#开启——
-aboutme: 世人皆醒我独醉
+aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
