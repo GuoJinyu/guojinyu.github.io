@@ -1,4 +1,6 @@
 title: Java中String和byte[]间的转换浅析
+date: 2016-06-21 14:00:00 
+update: 2016-08-04 11:06:00
 categories: 技术
 tags: [Java,Android]
 ---

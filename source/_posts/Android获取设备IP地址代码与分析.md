@@ -1,4 +1,6 @@
 ﻿title: Android获取设备IP地址代码与分析
+date: 2016-07-26 19:00:00 
+update: 2016-08-04 11:06:00
 categories: 技术
 tags: [Java,Android]
 ---

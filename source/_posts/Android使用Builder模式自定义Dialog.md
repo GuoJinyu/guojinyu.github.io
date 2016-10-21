@@ -1,4 +1,6 @@
 ﻿title: Android使用Builder模式自定义Dialog
+date: 2016-08-03 21:30:00 
+update: 2016-08-04 11:06:00
 categories: 技术
 tags: [Android,设计模式]
 ---
