@@ -1,4 +1,5 @@
 ﻿title: 银行POS交易流程及概念浅析
+date: 2016-09-18 18:58:00
 update: 2016-09-18 18:58:00
 categories: 技术
 tags: [业务]
