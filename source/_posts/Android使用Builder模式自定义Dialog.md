@@ -1,6 +1,6 @@
 ﻿title: Android使用Builder模式自定义Dialog
 date: 2016-08-03 21:30:00 
-update: 2016-08-04 11:06:00
+update: 2016-12-20 14:41:00
 categories: 技术
 tags: [Android,设计模式]
 ---
@@ -13,7 +13,7 @@ tags: [Android,设计模式]
 
 - **BaseDialog.java**
 
-```java
+```java  
 package com.acker.android.dialog;
 
 import android.app.Dialog;
@@ -259,11 +259,12 @@ public class BaseDialog extends Dialog {
     }
 }
 ```
+
 代码很简单，BaseDialog类内定义一些对话框要显示的控件和这些控件对应的一些属性，以及最终将所有属性填入到控件的方法show()。Builder类是BaseDialog的一个内部类，其中定义了BaseDialog类的所有属性的set方法以及装配完毕后的create()方法。
 
 - 对应的自定义Dialog的布局文件 **dialog_base.xml**如下：
 
-```xml
+```xml  
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -357,6 +358,7 @@ public class BaseDialog extends Dialog {
 
 </LinearLayout>
 ```
+
 涉及到的其他资源文件如下：
 
 - 对话框样式 **styles.xml**
@@ -389,7 +391,8 @@ public class BaseDialog extends Dialog {
 </resources>
 ```
 - 对话框背景 **bg_base_dialog.xml**
-```xml
+
+```xml  
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
@@ -429,7 +432,8 @@ public class BaseDialog extends Dialog {
 - **MainActivity.java**
 
 
-```java
+```java  
+
 package com.acker.android.dialog;
 
 import android.content.DialogInterface;
@@ -470,9 +474,9 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 来看下效果图：
-
+<center>
 ![自定义对话框效果图1][1]
-
+</center>
 很丑有木有，不过没关系，这里我们只是展示它的用法，如何把对话框做的好看一点就看各位的发挥了。可以看出自定义的BaseDialog的使用方法与Andorid自身的AlertDialog基本一致，都是通过其Builder类进行对象的构建。
 
 该自定义对话框还支持显示ProgressBar以及自定义内容填充的功能。
@@ -484,9 +488,9 @@ public class MainActivity extends AppCompatActivity {
 .setCancelable(false)
 ```
 效果图如下：
-
+<center>
 ![自定义对话框效果图2][2]
-
+</center>
 - 自定义内容区域且不显示取消按钮：
 
 ```java
@@ -525,9 +529,9 @@ amountEdit.setText("123456789");
 </LinearLayout>
 ```
 效果图如下：
-
+<center>
 ![自定义对话框效果图3][3]
-
+</center>
 综上，可以看出通过Builder模式自定义Dialog既可以维持原有Android对话框的使用方法，同时使用方便，自由度更高，大家完全可以按照各自的需求来对代码作出相应的修改。需要说明的是本文并没有严格按照传统的Builder设计模式来实现对话框，而是做了一些简化以更适合于我们的场景。
 
 文中所有代码可以在[个人github主页](https://github.com/GuoJinyu/AndroidUtils/tree/master/dialog)查看和下载。
