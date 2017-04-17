@@ -178,7 +178,7 @@ Android APP在HTTPS上存在的最大问题就是中间人攻击漏洞，所谓�
 
 ### 3. 缺少中间CA
 
-何谓缺少中间证书颁发机构？其实大多数公共CA不直接签署服务器证书，而是使用自己的根CA签署中间 CA，然后用中间CA去满足我们的证书签发的请求，以降低根CA泄露风险。那么问题来了，Android 等操作系统通常仅直接信任根CA，因此中间CA就又变成了未知CA。解决这个问题主要有两个办法，分别为服务端解决和客户端（参考谷歌官方文档[通过HTTPS和SSL确保安全](https://developer.android.com/training/articles/security-ssl.html)）。
+何谓缺少中间证书颁发机构？其实大多数公共CA不直接签署服务器证书，而是使用自己的根CA签署中间 CA，然后用中间CA去满足我们的证书签发的请求，以降低根CA泄露风险。那么问题来了，Android 等操作系统通常仅直接信任根CA，因此中间CA就又变成了未知CA。解决这个问题主要有两个办法，分别为服务端解决和客户端解决（参考谷歌官方文档[通过HTTPS和SSL确保安全](https://developer.android.com/training/articles/security-ssl.html)）。
 
 - 服务端
 配置服务器以便在服务器链中添加中间CA，使得服务器在SSL 握手期间不只向客户端发送它的证书，而是发送一个证书链，包括服务器CA以及到达可信的根CA所需要的任意中间证书。
