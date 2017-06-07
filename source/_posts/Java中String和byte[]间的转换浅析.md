@@ -38,6 +38,9 @@ public byte[] getBytes(Charset charset) {
     }
 }
 ```
+
+<!--more-->
+
 上述代码其实就是根据给定的编码方式进行编码。如果调用的是不带参数的getBytes()方法，则使用默认的编码方式，如下代码所示：
 ``` java
 /* JDK source code */

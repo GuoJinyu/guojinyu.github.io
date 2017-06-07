@@ -31,6 +31,8 @@ dpi(dots per inch)即每英寸的像素点的个数，这个值可以表示屏�
 >xxhdpi ～480dpi  
 >xxxhdpi ～640dpi  
 
+<!--more-->
+
 需要说明的是，上面的每种规格都只是圈定了一个范围，近似于后面的dpi数值，比如对于两台声明自己是hdpi屏幕密度的设备，其实际dpi值可能略有不同。此外，Android官方把mdpi定为基准(baseline)，这个基准有什么用呢，后面就可以看到了。
 
 **density**  

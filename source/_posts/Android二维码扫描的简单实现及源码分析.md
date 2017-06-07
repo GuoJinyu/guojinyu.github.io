@@ -1,6 +1,6 @@
 title: Android二维码扫描的简单实现及源码分析
 date: 2016-12-07 19:30:00 
-update: 2016-12-20 14:39:00 
+update: 2017-05-19 13:16:00 
 categories: 技术
 tags: [Android]
 ---
@@ -15,7 +15,7 @@ tags: [Android]
 * 1.添加项目依赖  
 
 ```gradle
-    compile 'com.acker:simplezxing:1.2'
+    compile 'com.acker:simplezxing:1.3'
 ```
 
 * 2.在你想调起条码扫描界面的地方(比如YourActivity)，调起二维码扫描界面CaptureActivity  
@@ -23,6 +23,8 @@ tags: [Android]
 ```java
     startActivityForResult(new Intent(YourActivity.this, CaptureActivity.class), CaptureActivity.REQ_CODE)
 ```
+
+<!--more-->
 
 然后就会打开如下这个界面：
 <center>

@@ -22,6 +22,8 @@ String ipAddress = Inet4Address.getLocalHost().getHostAddress()
 > Returns an InetAddress for the local host if possible, or the loopback address otherwise. This method works by getting the hostname, performing a DNS lookup, and then taking the first returned address. 
 Note that if the host doesn't have a hostname set – as Android devices typically don't – this method will effectively return the loopback address, albeit by getting the name localhost and then doing a lookup to translate that to 127.0.0.1.
 
+<!--more-->
+
 可以看出，一般在Android平台上，由于网络通信设备没有设置hostname，因此无法进行DNS检索得到其相应的IP地址，因此该方法会返回本地回环地址，即127.0.0.1，也就是说这个方法在Android平台上无法达到我们一般的获取本机IP地址的目的，经过测试，结果也确实如此。
 ## 2. 部分可行的方法
 ```java

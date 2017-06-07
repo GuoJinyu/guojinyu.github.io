@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.3.7"
   },
   "dependencies": {
     "hexo": "^3.2.2",
@@ -13,6 +13,7 @@
     "hexo-generator-douban": "^0.1.2",
     "hexo-generator-feed": "^1.1.0",
     "hexo-generator-index": "^0.2.0",
+    "hexo-generator-json-content": "^3.0.1",
     "hexo-generator-sitemap": "^1.1.2",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.2.0",

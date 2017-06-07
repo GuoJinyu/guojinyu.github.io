@@ -4,7 +4,7 @@
 
 # Site
 title: 郭晋宇的技术博客
-subtitle: Android&金融支付
+subtitle: 0.2+0.4=0.6000000000000001
 description:
 author: 郭晋宇
 language: zh-Hans
@@ -12,7 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://guojinyu.github.io/
+#url: http://guojinyu.github.io/
+url: http://guojinyu.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -74,3 +75,22 @@ deploy:
 
 douban:
     user: rescueacker
+
+jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true

@@ -13,6 +13,8 @@ tags: [Android,设计模式]
 
 - **BaseDialog.java**
 
+<!--more-->
+
 ```java  
 package com.acker.android.dialog;
 
