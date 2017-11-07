@@ -1,6 +1,6 @@
 title: Android二维码扫描的简单实现及源码分析
 date: 2016-12-07 19:30:00 
-update: 2017-05-19 13:16:00 
+update: 2017-06-21 11:25:00 
 categories: 技术
 tags: [Android]
 ---
@@ -9,13 +9,13 @@ tags: [Android]
 
 ## 条码扫描功能的快速集成
 
-默认你使用了Android Stuidio进行开发，直接使用这个开源项目[SimpleZXing](https://github.com/GuoJinyu/SimpleZXing),它是在ZXing库的作者为Android写的条码扫描APP Barcode Scanner的基础上精简和修改而成的。
+默认你使用了Android Stuidio进行开发，直接使用这个开源项目[SimpleZXing](https://github.com/GuoJinyu/SimpleZXing),它是在ZXing库的作者为Android写的条码扫描APP Barcode Scanner的基础上优化而成的。
 你可以通过简单的两步就可以实现条码扫描的功能。
 
 * 1.添加项目依赖  
 
 ```gradle
-    compile 'com.acker:simplezxing:1.3'
+    compile 'com.acker:simplezxing:1.5'
 ```
 
 * 2.在你想调起条码扫描界面的地方(比如YourActivity)，调起二维码扫描界面CaptureActivity  
@@ -88,6 +88,8 @@ tags: [Android]
             bundle.putBoolean(CaptureActivity.KEY_NEED_EXPOSURE, CaptureActivity.VALUE_NO_EXPOSURE);
             bundle.putByte(CaptureActivity.KEY_FLASHLIGHT_MODE, CaptureActivity.VALUE_FLASHLIGHT_OFF);
             bundle.putByte(CaptureActivity.KEY_ORIENTATION_MODE, CaptureActivity.VALUE_ORIENTATION_AUTO);
+            bundle.putBoolean(CaptureActivity.KEY_SCAN_AREA_FULL_SCREEN, CaptureActivity.VALUE_SCAN_AREA_FULL_SCREEN);
+            bundle.putBoolean(CaptureActivity.KEY_NEED_SCAN_HINT_TEXT, CaptureActivity.VALUE_SCAN_HINT_TEXT);
             intent.putExtra(CaptureActivity.EXTRA_SETTING_BUNDLE, bundle);
             startActivityForResult(intent, CaptureActivity.REQ_CODE);
         }
@@ -116,7 +118,8 @@ tags: [Android]
                 case CaptureActivity.REQ_CODE:
                     switch (resultCode) {
                         case RESULT_OK:
-                            tvResult.setText(data.getStringExtra(CaptureActivity.EXTRA_SCAN_RESULT));  //or do sth
+                            tvResult.setText(data.getStringExtra(CaptureActivity.EXTRA_SCAN_RESULT));  
+                            //or do sth
                             break;
                         case RESULT_CANCELED:
                             if (data != null) {
@@ -522,4 +525,4 @@ tags: [Android]
 
 另，转载请注明出处！文中若有什么错误希望大家探讨指正！
 
-[1]: http://obc3atr48.bkt.clouddn.com/new%20image%20-%20vtj52.jpg
+[1]: http://obc3atr48.bkt.clouddn.com/WechatIMG22.jpeg
