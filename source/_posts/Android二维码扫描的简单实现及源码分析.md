@@ -1,6 +1,6 @@
 title: Android二维码扫描的简单实现及源码分析
-date: 2016-12-07 19:30:00 
-update: 2017-06-21 11:25:00 
+date: 2016-12-07 19:30:00
+update: 2017-06-21 11:25:00
 categories: 技术
 tags: [Android]
 ---

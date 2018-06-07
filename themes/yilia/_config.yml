@@ -55,6 +55,17 @@ alipay: /assets/images/alipay.png
 # 微信二维码图片地址
 weixin: /assets/images/wechat.png
 
+# 目录
+# 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
+toc: 2
+# 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
+toc_hide_index: false
+# 目录为空时的提示
+toc_empty_wording: '目录，不存在的…'
+
+# 是否有快速回到顶部的按钮
+top: true
+
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: 'UA-61761428-1'
@@ -82,6 +93,13 @@ changyan_conf: 'prod_64240b71a8d36080bffb75a4e731fb93'
 #4、Disqus 在hexo根目录的config里也有disqus_shortname字段，优先使用yilia的
 #disqus: false
 
+#5、Gitment
+gitment_owner: false      #你的 GitHub ID
+gitment_repo: ''          #存储评论的 repo
+gitment_oauth:
+  client_id: ''           #client ID
+  client_secret: ''       #client secret
+
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
   # 头像上面的背景颜色
@@ -106,6 +124,6 @@ smart_menu:
 
 friends:
   Yikun: http://yikun.github.io/
-  ADing: http://www.dingyoung.com/
+  # ADing: http://www.dingyoung.com/
 
-aboutme: 西电通信七载，<br>帝都戎码一生<br><br>ISN->Baidu->Aisino<br/>Network->Android->Data
+aboutme: 西电通信七载，<br>帝都戎码一生<br><br>ISN->Baidu->Aisino->Netease<br/>Network->Android->You Konw Nothing

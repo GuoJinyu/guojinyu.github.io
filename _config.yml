@@ -73,7 +73,7 @@ deploy:
   repo: git@github.com:GuoJinyu/guojinyu.github.io.git
   branch: master
 - type: git
-  repo: https://git.coding.net/AckerKwok/AckerKwok.coding.me.git
+  repo: git@git.coding.net:AckerKwok/AckerKwok.coding.me.git
   branch: master
 
 douban:
